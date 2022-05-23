@@ -22,7 +22,7 @@ Here is a small application demo: [Check Demo](https://drive.google.com/file/d/1
 * If you have changed the database name or user, you will need to make the same change in ".env" file as well.
 * Once dependencies are installed, you can run server by ```npm start``` and front end by ```yarn start```
 
-##Important things to note:
+## Important things to note:
 * I have not used ORM in the server because using the queries directly speeds up the query execution.
 * I have created one additional route GET "/:id", i.e. get asset by id, which is not used but it is standard to create a get by id route when creating CRUD application. It will come in handy if assets grow big and contains more than just 3 propeties, to show its details in an separate popup or page.
 * Disabling of a button when the requirements are not met, can lead to confusion as user might not understand what else they are suppose to do, to enable a save or edit button. I believe user should be able to take actions and then make aware of the mistaked they did in order for them to correct it and retake the action. That is why in this application, users will be able to submit the add or edit form, and will be flashed with the errors if necessary.
