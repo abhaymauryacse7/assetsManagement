@@ -16,7 +16,7 @@ Here is a small application demo: [Check Demo](https://drive.google.com/file/d/1
 * Simply pull the project directory.
 * Server directory is "asset-manager-api" and front end directory is "asset-manager-ui"
 * Once you have both of them locally on your system, run ```npm install``` in server root and ```yarn install``` in front end root to install dependencies.
-* You will find a "script" folder in the root of the server project. It contains 3 sql scripts, they need to be run one by one in the database. It will create a new database, a new database user and 3 mockup assets entries in the database.
+* You will find a "scripts" folder in the root of the server project. It contains 3 sql scripts, they need to be run sequentially in the MySQL Server. It will create a new database, a new database user and 3 mockup assets entries in the database.
 * Please note that the scripts create a database named as "assets_system" and a database user named as "assets_manager_api" so if you already have that database or database user, please feel free to change it.
 * In order to minimize the setup work, I have pushed the ".env" file as well that contains the environment variables but in reality that file will need to be generted manually when setting up the project.
 * If you have changed the database name or user, you will need to make the same change in ".env" file as well.
